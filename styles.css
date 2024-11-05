@@ -393,55 +393,68 @@ section {
 
 /* Contact Section */
 .contact-section {
-    padding: 60px 20px;
-    max-width: 800px;
+    padding: 80px 20px;
+    max-width: 700px;
     margin: 0 auto;
     text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .contact-section h2 {
     font-size: 2.4rem;
-    margin-bottom: 30px;
-    color: #333;
+    margin-bottom: 25px;
+    color: #2c3e50;
 }
 
 /* Form Group */
 .form-group {
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     width: 100%;
 }
 
+/* Input and Textarea Styling */
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 12px; /* Consistent padding */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 15px 1px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     font-size: 1rem;
     color: #333;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
+
 
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: #3498db;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     outline: none;
+    background-color: #fff;
 }
+
 
 /* Floating Label */
 .form-group label {
     position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    background-color: #fff;
-    padding: 0 5px;
+    top: 18px;
+    left: 18px;
+    background-color: #ffffff;
+    padding: 0 6px;
     color: #888;
     font-size: 1rem;
-    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
     pointer-events: none;
 }
 
@@ -449,8 +462,8 @@ section {
 .form-group textarea:focus + label,
 .form-group input:not(:placeholder-shown) + label,
 .form-group textarea:not(:placeholder-shown) + label {
-    top: -8px;
-    font-size: 0.9rem;
+    top: -10px;
+    font-size: 0.85rem;
     color: #3498db;
 }
 
@@ -458,27 +471,29 @@ section {
 .cta-button, input[type="submit"] {
     background-color: #3498db;
     color: #fff;
-    cursor: pointer;
-    border: none;
-    padding: 12px;
-    border-radius: 5px;
+    padding: 14px 28px;
+    border-radius: 8px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
+    cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
 }
 
 .cta-button:hover, input[type="submit"]:hover {
     background-color: #2980b9;
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
+
 
 /* Map Container */
 .map-container {
-    margin-top: 40px;
-    border: 2px solid #bdc3c7;
-    border-radius: 10px;
+    margin-top: 50px;
+    border: 1px solid #dfe6e9;
+    border-radius: 12px;
     overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer Styling */
